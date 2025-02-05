@@ -31,9 +31,9 @@ LV_IMG_DECLARE(bongo_1);
 LV_IMG_DECLARE(bongo_2);
 
 const lv_img_dsc_t *bongo[] = {
+    &bongo_0,
     &bongo_1,
     &bongo_2,
-    &bongo_3,
 };
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
