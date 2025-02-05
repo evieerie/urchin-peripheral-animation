@@ -189,9 +189,9 @@ static struct keycode_status_state keycode_status_get_state(const zmk_event_t *e
     };
 }
 
-ZMK_DISPLAY_WIDGET_LISTENER(widget_wpm_status, struct wpm_status_state, wpm_status_update_cb,
-                            wpm_status_get_state)
-ZMK_SUBSCRIPTION(widget_wpm_status, zmk_wpm_state_changed);
+ZMK_DISPLAY_WIDGET_LISTENER(widget_bongo_cat, struct keycode_status_state, keycode_status_update_cb,
+                            keycode_status_get_state)
+ZMK_SUBSCRIPTION(widget_bongo_cat, zmk_keycode_state_changed);
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_obj_create(parent);
