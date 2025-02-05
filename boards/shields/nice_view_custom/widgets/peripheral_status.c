@@ -31,8 +31,6 @@ LV_IMG_DECLARE(img_4);
 LV_IMG_DECLARE(img_5);
 LV_IMG_DECLARE(img_6);
 LV_IMG_DECLARE(img_7);
-LV_IMG_DECLARE(img_8);
-LV_IMG_DECLARE(img_9);
 
 const lv_img_dsc_t *anim_imgs[] = {
     &img_0,
@@ -43,8 +41,6 @@ const lv_img_dsc_t *anim_imgs[] = {
     &img_5,
     &img_6,
     &img_7,
-    &img_8,
-    &img_9,
 };
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -142,7 +138,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     lv_obj_t * art = lv_animimg_create(widget->obj);            //<--
     lv_obj_center(art);                                         //<--
-    lv_animimg_set_src(art, (const void **) anim_imgs, 10);     //<--
+    lv_animimg_set_src(art, (const void **) anim_imgs, 8);     //<--
     lv_animimg_set_duration(art, 1500);                         //<--
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);  //<--
     lv_animimg_start(art);                                      //<--
