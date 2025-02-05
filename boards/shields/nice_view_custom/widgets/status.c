@@ -39,6 +39,10 @@ const lv_img_dsc_t *bongo[] = {
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
+struct keycode_status_state {
+    bool state;
+};
+
 struct output_status_state {
     struct zmk_endpoint_instance selected_endpoint;
     int active_profile_index;
